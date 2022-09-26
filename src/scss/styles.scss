@@ -1,1 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-image: url("../images/pattern.png");
+  background-repeat: repeat;
+}
