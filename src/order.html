@@ -72,32 +72,66 @@
           <div class="col-md-5 col-lg-4 order-md-last">
             <h4 class="mb-3">Redeem Coupon</h4>
             <form class="card p-2">
-              <div>
+              <div class="input-group">
                 <input
                   type="text"
                   class="form-control"
                   placeholder="Promo Code"
                 />
+                <button type="submit" class="btn btn-secondary">Redeem</button>
               </div>
-              <button class="btn btn-secondary my-2">Redeem</button>
             </form>
           </div>
+
           <div class="col-md-7 col-lg-8">
             <h4 class="mb-3">Your Address</h4>
-            <form action="done.html" method="get">
+            <form
+              class="needs-validation"
+              action="done.html"
+              method="get"
+              novalidate
+            >
               <div class="row g-3">
                 <div class="col-sm-6">
                   <label for="firstname" class="form-label">First Name</label>
-                  <input type="text" id="firstName" class="form-control" />
+                  <input
+                    type="text"
+                    id="firstName"
+                    class="form-control"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Valid firstname is required.
+                  </div>
                 </div>
+
                 <div class="col-sm-6">
                   <label for="lastname" class="form-label">Last Name</label>
-                  <input type="text" id="firstName" class="form-control" />
+                  <input
+                    type="text"
+                    id="firstName"
+                    class="form-control"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Valid lastname is required.
+                  </div>
                 </div>
 
                 <div class="col-12">
                   <label for="username" class="form-label">Username</label>
-                  <input type="text" id="username" class="form-control" />
+                  <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input
+                      type="text"
+                      id="username"
+                      class="form-control"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Valid username is required
+                    </div>
+                  </div>
                 </div>
                 <div class="col-12">
                   <label for="email" class="form-label"
@@ -281,5 +315,7 @@
         </div>
       </div>
     </main>
+
+    <script src="js/checkValidation.js"></script>
   </body>
 </html>
