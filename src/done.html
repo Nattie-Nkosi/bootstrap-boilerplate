@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bethany's Pie Shop</title>
+    <link rel="stylesheet" href="scss/styles.scss" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+        <div class="container">
+          <a href="/" class="navbar-brand">
+            <img
+              src="./images/pie.png"
+              width="30"
+              height="30"
+              alt=""
+              class="d-inline-block align-top"
+            />
+            Bethany's Pie Shop
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggler="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggler navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="/" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="seasonalpies.html" class="nav-link">Pies</a>
+              </li>
+              <li class="nav-item active">
+                <a href="order.html" class="nav-link">Order</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+      <div class="container">
+        <nav class="my-3 ms-3">
+          <ol
+            class="breadcrumb"
+            style="--bs-breadcrumb-divider: '>'"
+            aria-label="breadcrumb"
+          >
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Order Placed
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </main>
+  </body>
+</html>

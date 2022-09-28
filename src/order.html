@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bethany's Pie Shop</title>
+    <link rel="stylesheet" href="scss/styles.scss" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+        <div class="container">
+          <a href="/" class="navbar-brand">
+            <img
+              src="./images/pie.png"
+              width="30"
+              height="30"
+              alt=""
+              class="d-inline-block align-top"
+            />
+            Bethany's Pie Shop
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggler="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggler navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="/" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="seasonalpies.html" class="nav-link">Pies</a>
+              </li>
+              <li class="nav-item active">
+                <a href="order.html" class="nav-link">Order</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+      <div class="container">
+        <nav class="my-3 ms-3">
+          <ol
+            class="breadcrumb"
+            style="--bs-breadcrumb-divider: '>'"
+            aria-label="breadcrumb"
+          >
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Order</li>
+          </ol>
+        </nav>
+
+        <div class="p-2 text-center">
+          <h1 class="display-4">Your details</h1>
+        </div>
+
+        <div class="row g-5 my-5">
+          <div class="col-md-5 col-lg-4 order-md-last">
+            <h4 class="mb-3">Redeem Coupon</h4>
+            <form class="card p-2">
+              <div>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Promo Code"
+                />
+              </div>
+              <button class="btn btn-secondary my-2">Redeem</button>
+            </form>
+          </div>
+          <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3">Your Address</h4>
+            <form action="done.html" method="get">
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstname" class="form-label">First Name</label>
+                  <input type="text" id="firstName" class="form-control" />
+                </div>
+                <div class="col-sm-6">
+                  <label for="lastname" class="form-label">Last Name</label>
+                  <input type="text" id="firstName" class="form-control" />
+                </div>
+
+                <div class="col-12">
+                  <label for="username" class="form-label">Username</label>
+                  <input type="text" id="username" class="form-control" />
+                </div>
+                <div class="col-12">
+                  <label for="email" class="form-label"
+                    >Email <span class="text-muted">(Optional)</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="you@example.com"
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="addredd" class="form-label">Address</label>
+                  <input
+                    type="text"
+                    id="address"
+                    class="form-control"
+                    placeholder="123 Main st"
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="address2" class="form-label"
+                    >Address 2 <span class="text-muted">(Optional)</span></label
+                  >
+                  <input
+                    type="text"
+                    id="address2"
+                    class="form-control"
+                    placeholder="Apartment or suite"
+                  />
+                </div>
+
+                <div class="col-md-5">
+                  <label for="country" class="form-label">Country</label>
+                  <select id="country" class="form-select">
+                    <option value="">Choose...</option>
+                    <option>South Africa</option>
+                    <option>UK</option>
+                    <option>France</option>
+                    <option>Belgium</option>
+                    <option>Germany</option>
+                  </select>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="state" class="form-label">State</label>
+                  <select id="state" class="form-select">
+                    <option value="">Choose...</option>
+                    <option>Not applicable</option>
+                    <option>Gauteng</option>
+                    <option>KwaZulu Natal</option>
+                    <option>Western Cape</option>
+                    <option>Eastern Cape</option>
+                    <option>Northern Cape</option>
+                    <option>Limpopo</option>
+                    <option>North West</option>
+                  </select>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">Zip</label>
+                  <input
+                    type="text"
+                    id="zip"
+                    class="form-control"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+
+              <hr class="my-4" />
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  id="same-address"
+                  class="form-check-input"
+                />
+                <label for="same-address" class="form-check-label"
+                  >Shipping address is the same as billing address</label
+                >
+              </div>
+
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  id="save-info"
+                  class="form-check-input"
+                />
+                <label for="save-info" class="form-label"
+                  >Save this information for next time</label
+                >
+              </div>
+
+              <hr class="my-4" />
+              <h4 class="mb-3">Payment</h4>
+
+              <div class="my-3">
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    id="credit"
+                    name="paymentMethod"
+                    class="form-check-input"
+                    checked
+                  />
+                  <label for="credit" class="form-check-label"
+                    >Credit Card</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    id="debit"
+                    name="paymentMethod"
+                    class="form-check-input"
+                  />
+                  <label for="debit" class="form-check-label">Debit Card</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    id="paypalt"
+                    name="paymentMethod"
+                    class="form-check-input"
+                  />
+                  <label for="paypal" class="form-check-label">Paypal</label>
+                </div>
+              </div>
+
+              <div class="row gy-3">
+                <div class="form-floating col-md-6">
+                  <input
+                    type="text"
+                    id="cc-name"
+                    class="form-control"
+                    placeholder="John Doe"
+                  />
+                  <label for="cc-name">Name on Card</label>
+                  <small class="text-muted"
+                    >Full name as displayed on card</small
+                  >
+                </div>
+
+                <div class="form-floating col-md-6">
+                  <input
+                    type="text"
+                    id="cc-number"
+                    class="form-control"
+                    placeholder="xxx-xxxxx-xx"
+                  />
+                  <label for="cc-number">Credit Card Number</label>
+                </div>
+
+                <div class="form-floating col-md-3">
+                  <input
+                    type="text"
+                    id="cc-expiration"
+                    class="form-control"
+                    placeholder="12/24"
+                  />
+                  <label for="cc-number">Expiration</label>
+                </div>
+                <div class="form-floating col-md-3">
+                  <input
+                    type="text"
+                    id="cc-cvv"
+                    class="form-control"
+                    placeholder="123"
+                  />
+                  <label for="cc-cvv">CVV</label>
+                </div>
+              </div>
+
+              <hr class="my-4" />
+              <button class="w-100 btn btn-primary btn-lg" type="submit">
+                Place Order
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
