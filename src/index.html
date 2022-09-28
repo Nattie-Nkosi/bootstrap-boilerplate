@@ -11,7 +11,7 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
         <div class="container">
           <a href="/" class="navbar-brand">
             <img
@@ -24,16 +24,28 @@
             Bethany's Pie Shop
           </a>
 
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggler="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggler navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="nav navbar-nav mr-auto">
               <li class="nav-item active">
                 <a href="/" class="nav-link">Home</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Pies</a>
+                <a href="seasonalpies.html" class="nav-link">Pies</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Order</a>
+                <a href="basicform.html" class="nav-link">Order</a>
               </li>
             </ul>
           </div>
@@ -43,6 +55,21 @@
 
     <main role="main">
       <div class="container">
+        <nav class="my-3 ms-3">
+          <ol
+            class="breadcrumb"
+            style="--bs-breadcrumb-divider: '>'"
+            aria-label="breadcrumb"
+          >
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Pies</a></li>
+            <li class="breadcrumb-item"><a href="#">Fruit pies</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Apple pies
+            </li>
+          </ol>
+        </nav>
+
         <h1 class="fw-bolder">
           Apple pie
 
@@ -141,7 +168,7 @@
             </a>
           </div>
           <div class="col-md-3 col-sm-6 mb-3">
-            <a href="#">
+            <a href="cheesecakes.html">
               <img
                 src="./images/products/blueberrycheesecakesmall.jpg"
                 alt=""
